@@ -6,8 +6,6 @@
 
 bool conv(unsigned char & let, unsigned char & ris){
     bool flag;
-    let=0;
-    ris=0;
     if(((let>64)&(let<91))or((let>96)&(let<123))){
         if((let>64)&(let<91)){
             ris=let + ' ';
