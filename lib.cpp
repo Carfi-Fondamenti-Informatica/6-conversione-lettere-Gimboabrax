@@ -3,11 +3,12 @@
 //
 
 #include "lib.h"
-using namespace std;
 
 bool conv(unsigned char & let, unsigned char & ris){
     bool flag;
-    if(((let<91))or((let>96)&(let<123))){
+    let=0;
+    ris=0;
+    if(((let>64)&(let<91))or((let>96)&(let<123))){
         if((let>64)&(let<91)){
             ris=let + ' ';
         } else{
