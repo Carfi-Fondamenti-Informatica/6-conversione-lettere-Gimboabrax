@@ -1,17 +1,21 @@
-#include "lib.h"
+//
+// Created by Abram on 28/11/2021.
+//
 
-char conv(unsigned char let=0){
-    bool flag=false;
-    if(((let>64)&(let<91))or((let>96)&(let<123))){
+#include "lib.h"
+using namespace std;
+
+bool conv(unsigned char & let, unsigned char & ris){
+    bool flag;
+    if(((let<91))or((let>96)&(let<123))){
         if((let>64)&(let<91)){
-            let=let + ' ';
+            ris=let + ' ';
         } else{
-            let=let - ' ';
+            ris=let - ' ';
         }
         flag=true;
     } else{
         flag=false;
     }
-    return let;
+    return flag;
 }
-
