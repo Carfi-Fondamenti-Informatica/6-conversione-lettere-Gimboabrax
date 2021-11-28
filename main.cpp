@@ -2,8 +2,8 @@
 #include "lib.h"
 using namespace std;
 int main() {
-    unsigned char let;
-    unsigned char ris;
+    unsigned char let=0;
+    unsigned char ris=0;
     cin >> let;
     if(conv(let, ris)){
         conv(let, ris);
