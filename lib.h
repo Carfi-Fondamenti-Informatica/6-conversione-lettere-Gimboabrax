@@ -1,1 +1,1 @@
-
+char conv(unsigned char);
