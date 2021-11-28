@@ -1,12 +1,13 @@
 #include <iostream>
 #include "lib.h"
 using namespace std;
-
 int main() {
-    char let;
+    unsigned char let;
+    unsigned char ris;
     cin >> let;
-    if(conv(let)){
-        cout << conv(let) << endl;
+    if(conv(let, ris)){
+        conv(let, ris);
+        cout << ris << endl;
     } else{
         cout << "errore" << endl;
     }
